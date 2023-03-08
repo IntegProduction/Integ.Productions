@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah's Ark | Integ.Productions</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Jockey+One" />
+    <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="structure.css">
+    <link rel="stylesheet" type="text/css" href="pagetransition.css">
+    
+    <style>
+        body {
+            background: url('bg.png');
+            background-repeat: repeat;
+            background-size: 30%;
+        }
+
+        .title::before {
+            background-image: url("noahsark.png");
+        }
+        
+        
+        .title::after {
+            background-image: url("RightArrow.png");
+        }
+    </style>
+</head>
+<body onload="getaccount()">
+    <div id="headerplace"></div>
+    
+    <div class="box">
+        <div class="title" onclick="window.location.href = 'chllxproject.html'" title="Go to Chllx Project?">Noah's Ark</div>
+        <div class="container">
+            <div class="info">
+                <img src="noahsarkposter.jpg" alt="Dummy Image" id="festimg">
+                <div id="realinfo">
+                    <p>
+                        <div class="heading">Meaning:</div><br>
+                        Noah's Ark strives to create a better future with our products. Using eco friendly and recycled materials, we aim to sell creative, innovative, and functional products for all types of people.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="footerplace" style="position: absolute; width: 100%;"></div>
+
+    <script src="footer.js"></script>
+    <script src="account.js"></script>
+    <script src="header.js"></script>
+    <script>
+        function OME() {
+            const div = document.getElementById("formdiv");
+            div.animate([
+            {
+                transform: 'rotateX(0px) translateX(-50%) translateY(0px)'
+            },
+            {
+                transform: 'rotateX(30px) translateX(-50%) translateY(0px)'
+            }
+            ],
+            {
+                duration: 500
+            }
+            )
+            const onMouseEnter = setTimeout(OMEUse, 450);
+            function OMEUse() {
+                div.style.transform = 'rotateX(30px)';
+            }
+        }
+        
+        function OML() {
+            const div = document.getElementById("formdiv");
+            div.animate([
+            {
+                transform: 'rotateX(30px) translateX(-50%) translateY(0)'
+            },
+            {
+                transform: 'rotateX(30px) translateX(-50%) translateY(0)'
+            }
+            ],
+            {
+                duration: 500
+            }
+            )
+            const onMouseEnter = setTimeout(OMEUse, 450);
+            function OMEUse() {
+                div.style.transform = 'rotateX(0px)';
+            }
+        }
+    </script>
+</body>
+</html>
